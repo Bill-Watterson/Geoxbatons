@@ -3,54 +3,131 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projeto Módulo 3</title>
+  <title>A Nobre Piscinas</title>
+  <!-- Tailwind CSS + DaisyUI via CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet">
+  <!-- Ícones Font Awesome (para redes sociais e WhatsApp) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            nobre: {
+              blue: '#1b3372',
+              darkblue: '#142758',
+              orange: '#ff8328'
+            }
+          }
+        }
+      }
+    }
+  </script>
 </head>
-<body>
-  <!-- SEÇÃO: HEADER (responsável: Daniel) -->
+<body class="bg-base-100 text-base-content min-h-screen flex flex-col font-sans">
 
+  <!-- ================= HEADER / NAVBAR (Integrante Daniel) ================= -->
+  <header class="bg-nobre-blue text-white sticky top-0 z-50 shadow-md">
+    <div class="max-w-7xl mx-auto px-4 md:px-8 py-3 flex items-center justify-between">
+      
+      <!-- Logo -->
+      <a href="#" class="flex items-center gap-2">
+        <div class="flex flex-col items-center">
+          <i class="fa-solid font-bold text-2xl text-white tracking-widest">NOBRE</i>
+          <span class="text-[10px] uppercase tracking-wider text-gray-200">Piscinas de Fibra</span>
+        </div>
+      </a>
 
-  <!-- SEÇÃO: HERO (responsável: Marcos) -->
-<section class="relative w-full min-h-[85vh] flex items-center justify-start bg-cover bg-center px-8 md:px-20"
-style="background-image: url('img/77eab7339b285c832993d8a2ebd1e1e3d871f4de.jpg');">
+      <!-- Menu Desktop (Sumi no mobile, visível em lg/xl) -->
+      <nav class="hidden lg:flex items-center gap-6 text-xs font-semibold uppercase tracking-wider">
+        <!-- Ícones Sociais -->
+        <div class="flex items-center gap-3 border-r border-white/20 pr-4">
+          <a href="#" class="hover:text-nobre-orange transition-colors"><i class="fa-brands fa-whatsapp text-base"></i></a>
+          <a href="#" class="hover:text-nobre-orange transition-colors"><i class="fa-brands fa-instagram text-base"></i></a>
+        </div>
+        <!-- Links de Navegação -->
+        <a href="#sobre" class="hover:text-nobre-orange transition-colors">Sobre</a>
+        <a href="#piscinas" class="hover:text-nobre-orange transition-colors">Piscinas</a>
+        <a href="#orcamentos" class="hover:text-nobre-orange transition-colors">Orçamentos</a>
+        <a href="#garantia" class="hover:text-nobre-orange transition-colors">Garantia</a>
+        <a href="#contatos" class="hover:text-nobre-orange transition-colors">Contatos</a>
+      </nav>
 
-<!-- Camada suave para garantir leitura do texto sobre a água -->
-<div class="absolute inset-0 bg-sky-900/20"></div>
+      <!-- Dropdown Mobile (Menu Hambúrguer - Visível apenas em telas menores) -->
+      <div class="dropdown dropdown-end lg:hidden">
+        <label tabindex="0" class="btn btn-ghost text-white focus:bg-transparent">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </label>
+        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-4 shadow bg-nobre-darkblue rounded-box w-52 uppercase font-semibold gap-2">
+          <li><a href="#sobre" class="hover:text-nobre-orange">Sobre</a></li>
+          <li><a href="#piscinas" class="hover:text-nobre-orange">Piscinas</a></li>
+          <li><a href="#orcamentos" class="hover:text-nobre-orange">Orçamentos</a></li>
+          <li><a href="#garantia" class="hover:text-nobre-orange">Garantia</a></li>
+          <li><a href="#contatos" class="hover:text-nobre-orange">Contatos</a></li>
+          <li class="pt-2 border-t border-white/20 flex flex-row justify-around">
+            <a href="#"><i class="fa-brands fa-whatsapp text-lg"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram text-lg"></i></a>
+          </li>
+        </ul>
+      </div>
 
-<!-- Container de Conteúdo (Alinhado à esquerda e empilhado na vertical) -->
-<div class="relative z-10 max-w-xl text-white flex flex-col items-start space-y-6">
+    </div>
+  </header>
 
+  <!-- ================= CONTEÚDO PRINCIPAL (Espaço para o resto do grupo) ================= -->
+  <main class="flex-grow">
+    <!-- O conteúdo central desenvolvido pelos colegas do grupo-->
+  </main>
 
-<!-- Título Principal -->
-<h1 class="text-3xl md:text-5xl font-extrabold leading-tight drop-shadow-md">
-Experiência <span class="text-[#ff9900]">no DNA</span> na fabricação de piscinas de fibra
-</h1>
+  <!-- ================= FOOTER / RODAPÉ (Integrante Daniel) ================= -->
+<footer class="w-full bg-[#1b3372] text-white">
+  <!-- Content Grid: 1 coluna no mobile, 4 colunas a partir de md (768px) -->
+  <div class="mx-auto max-w-7xl px-6 py-10 md:px-12 md:py-14 grid grid-cols-1 md:grid-cols-4 gap-8 text-xs">
+    
+    <!-- Coluna 1: Apresentação -->
+    <div class="flex flex-col gap-2">
+      <p class="text-slate-200 leading-relaxed">
+        A Nobre Piscinas é especialista em fazer piscinas de qualidade e proporcionar o melhor atendimento aos seus clientes. 
+        <a href="#contatos" class="text-slate-300 hover:text-white underline transition-colors">Vamos conversar?</a>
+      </p>
+    </div>
 
-<!-- Texto Descritivo -->
-<p class="text-base md:text-lg text-white/95 leading-relaxed drop-shadow-sm">
-Uma nova marca que já nasce com 25 anos de história para contar. A Nobre Piscinas possui em seu DNA a experiência de produzir piscinas de fibra de vidro.
-</p>
+    <!-- Coluna 2: Contatos -->
+    <div class="flex flex-col gap-1">
+      <h4 class="text-slate-300 font-normal mb-1">Nossos contatos</h4>
+      <p class="text-white">+55 84 9.9945.5686 | +55 84 3564.6986</p>
+      <p class="text-white">atendimento@nobrepiscinas.com.br</p>
+    </div>
 
-<!-- Botões de Ação -->
-<div class="flex flex-wrap gap-4 pt-2">
-<a href="#" class="btn border-none bg-[#ff9900] hover:bg-[#e08700] text-white font-bold uppercase text-xs md:text-sm px-6">
-&gt;&gt; Conheça nossa história
-</a>
-<a href="#" class="btn btn-outline border-2 border-white text-white hover:bg-white hover:text-sky-600 font-bold uppercase text-xs md:text-sm px-6">
-Ver Piscinas
-</a>
-</div>
+    <!-- Coluna 3: Endereço -->
+    <div class="flex flex-col gap-1">
+      <h4 class="text-slate-300 font-normal mb-1">Endereço</h4>
+      <p class="text-white">Rua das Flores, Capim Macio, Natal / RN</p>
+      <p class="text-white">CEP: 59.125-100</p>
+    </div>
 
-</div>
-</section>
+    <!-- Coluna 4: Redes Sociais -->
+    <div class="flex flex-col gap-2">
+      <h4 class="text-slate-300 font-normal mb-1">Nossas mídias</h4>
+      <div class="flex items-center gap-4 text-xl">
+        <a href="#" aria-label="Instagram" class="text-white hover:text-slate-300 transition-colors">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="#" aria-label="WhatsApp" class="text-white hover:text-slate-300 transition-colors">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+      </div>
+    </div>
 
+  </div>
 
-  <!-- SEÇÃO: CARDS (responsável: Luiz Guilherme) -->
-   
-  <!-- SEÇÃO: FAQ (responsável: Igor) -->
-
-  <!-- SEÇÃO: FOOTER (responsável: Daniel) -->
-   
-</body>
-</html> 
+  <!-- Faixa Inferior com o Logo "AN" -->
+  <div class="w-full bg-[#142758] py-5 flex justify-center items-center">
+    <svg class="h-6 w-auto text-[#728bbd] fill-current" viewBox="0 0 100 60">
+      <path d="M10 50 L35 10 L50 35 L65 10 L90 50 L70 50 L65 38 L50 15 L35 38 L30 50 Z" />
+    </svg>
+  </div>
+</footer>
