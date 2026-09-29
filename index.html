@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard — Produtos</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-base-200 min-h-screen flex flex-col">
+
+  <div class="navbar bg-base-100 shadow-md px-4">
+    <div class="flex-1">
+      <a class="btn btn-ghost text-xl font-bold text-primary">MeuDashboard</a>
+    </div>
+    <div class="flex-none gap-2">
+      <div class="badge badge-accent gap-1 py-3 px-3">
+        ⚡ Créditos: <span id="user-credits" class="font-bold">150</span>
+      </div>
+      <div class="dropdown dropdown-end">
+        <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+          <div class="w-10 rounded-full">
+            <img alt="Avatar" src="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex flex-1">
+    <aside class="w-64 bg-base-100 p-4 shadow-sm hidden md:block">
+      <ul class="menu w-full rounded-box gap-1">
+        <li class="menu-title">Navegação</li>
+        <li><a href="index.html" class="active">📦 Produtos</a></li>
+        <li><a href="compra.html">💳 Comprar Créditos</a></li>
+      </ul>
+    </aside>
+
+    <main class="flex-1 p-6" id="main-content">
+      <h1 class="text-2xl font-bold mb-4">Bem-vindo ao Dashboard</h1>
+      <p class="text-gray-600">Selecione uma opção no menu ao lado.</p>
+    </main>
+  </div>
+
+</body>
+</html>
