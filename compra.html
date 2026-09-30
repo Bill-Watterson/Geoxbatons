@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comprar Créditos - Dashboard</title>
+  <!-- Tailwind CSS & DaisyUI -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-base-200 min-h-screen flex flex-col">
+
+  <!-- Header / Navbar -->
+  <header class="navbar bg-base-100 shadow-md px-4">
+    <div class="flex-1">
+      <a href="index.html" class="btn btn-ghost text-xl font-bold">Dashboard App</a>
+    </div>
+    <div class="flex-none gap-2">
+      <div class="dropdown dropdown-end">
+        <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+          <div class="w-10 rounded-full">
+            <img alt="Avatar do usuário" src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Container Principal: Sidebar + Conteúdo -->
+  <div class="flex flex-1">
+
+    <!-- Sidebar / Menu Lateral -->
+    <aside class="w-64 bg-base-100 p-4 shadow-md hidden md:block">
+      <ul class="menu bg-base-100 w-full rounded-box gap-1">
+        <li class="menu-title">Navegação</li>
+        <li><a href="index.html">📦 Produtos</a></li>
+        <!-- Estado Ativo no item Comprar Créditos -->
+        <li><a href="compra.html" class="active font-bold">💳 Comprar Créditos</a></li>
+      </ul>
+    </aside>
+
+    <!-- Conteúdo da Página -->
+    <main class="flex-1 p-6 md:p-10">
+      <div class="mb-8">
+        <h1 class="text-3xl font-bold mb-2">Comprar Créditos</h1>
+        <p class="text-gray-600">Escolha o pacote ideal para recarregar sua conta.</p>
+      </div>
+
+      <!-- Grid com 3 Pacotes de Créditos -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl">
+        
+        <!-- Pacote 1: Start -->
+        <div class="card bg-base-100 shadow-xl border border-base-300">
+          <div class="card-body">
+            <h2 class="card-title text-xl">Pacote Start</h2>
+            <p class="text-sm text-gray-500 mb-4">Ideal para quem está começando.</p>
+            <div class="text-4xl font-extrabold mb-4">100 <span class="text-lg font-normal text-gray-500">créditos</span></div>
+            <ul class="text-sm space-y-2 mb-6">
+              <li>✓ Acesso a todos os recursos básicos</li>
+              <li>✓ Suporte via e-mail</li>
+              <li>✓ Validade de 30 dias</li>
+            </ul>
+            <div class="card-actions mt-auto">
+              <button class="btn btn-outline btn-primary w-full">R$ 29,90</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pacote 2: Pro (Destaque Visual) -->
+        <div class="card bg-base-100 shadow-2xl border-2 border-primary relative">
+          <!-- Badge Mais Vendido -->
+          <div class="badge badge-primary absolute -top-3 right-4 px-3 py-1 font-semibold">Mais Vendido</div>
+          <div class="card-body">
+            <h2 class="card-title text-xl text-primary">Pacote Pro</h2>
+            <p class="text-sm text-gray-500 mb-4">O mais escolhido pelos usuários.</p>
+            <div class="text-4xl font-extrabold mb-4">500 <span class="text-lg font-normal text-gray-500">créditos</span></div>
+            <ul class="text-sm space-y-2 mb-6">
+              <li>✓ Todos os recursos do Start</li>
+              <li>✓ Suporte prioritário 24/7</li>
+              <li>✓ Validade de 90 dias</li>
+              <li>✓ Bônus de +50 créditos</li>
+            </ul>
+            <div class="card-actions mt-auto">
+              <button class="btn btn-primary w-full">R$ 99,90</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pacote 3: Ultra -->
+        <div class="card bg-base-100 shadow-xl border border-base-300">
+          <div class="card-body">
+            <h2 class="card-title text-xl">Pacote Ultra</h2>
+            <p class="text-sm text-gray-500 mb-4">Para uso intensivo e equipes.</p>
+            <div class="text-4xl font-extrabold mb-4">1500 <span class="text-lg font-normal text-gray-500">créditos</span></div>
+            <ul class="text-sm space-y-2 mb-6">
+              <li>✓ Acesso ilimitado a todos os recursos</li>
+              <li>✓ Gerente de conta dedicado</li>
+              <li>✓ Sem data de expiração</li>
+            </ul>
+            <div class="card-actions mt-auto">
+              <button class="btn btn-outline btn-primary w-full">R$ 249,90</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+  </div>
+
+</body>
+</html>
