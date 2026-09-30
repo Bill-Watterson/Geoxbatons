@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard — AgênciaWeb</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 min-h-screen flex flex-col justify-between">
+
+  <header class="navbar bg-white border-b border-gray-200 px-6 py-3 sticky top-0 z-50">
+    <div class="flex-1 items-center gap-3">
+      <div class="flex items-center gap-1 text-blue-600 font-bold text-xl cursor-pointer" onclick="switchTab('produtos')">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+        <div class="flex flex-col leading-none">
+          <span class="text-blue-600 font-extrabold tracking-wider text-base">Agência<span class="text-gray-700">Web</span></span>
+          <span class="text-[9px] text-gray-400 tracking-widest uppercase">Escolar</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex-none gap-3 items-center">
+      <div class="badge badge-accent gap-1 py-3 px-3 font-semibold">
+        ⚡ Créditos: <span id="user-credits" class="font-bold">150</span>
+      </div>
+
+      <div class="flex items-center gap-2 border border-gray-200 rounded-lg px-3 py-1.5 bg-gray-50">
+        <div class="avatar">
+          <div class="w-8 rounded-full">
+            <img alt="Avatar do usuário" src="https://revistadofato.com.br/wp-content/uploads/2025/01/neymar-.webp" />
+          </div>
+        </div>
+        <div class="text-right leading-tight hidden sm:block">
+          <div class="text-xs font-bold text-gray-800">John Doe</div>
+          <div class="text-[10px] text-gray-400">Agência Web</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="flex flex-1">
+
+    <aside class="w-64 border-r border-gray-200 bg-white p-6 flex flex-col gap-6 hidden md:flex">
+      <div>
+        <h3 class="font-bold text-gray-800 text-base mb-4">Canal do cliente</h3>
+        
+        <div class="flex flex-col gap-2">
+          <div class="flex items-center gap-2 text-sm font-medium text-gray-700 mt-2">
+            <svg class="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+            <span>Loja de projetos</span>
+          </div>
+          <div class="flex flex-col pl-6 gap-2 text-sm">
+            <button onclick="switchTab('produtos')" id="nav-produtos" class="text-left text-blue-600 font-semibold transition-colors">📦 Dashboard</button>
+            <button onclick="switchTab('creditos')" id="nav-creditos" class="text-left text-gray-500 hover:text-gray-800 transition-colors">💳 Comprar créditos</button>
+            <a href="#" class="text-gray-500 hover:text-gray-800">Concluídos</a>
+          </div>
+        </div>
+
+        <div class="mt-6 flex flex-col gap-4 text-sm text-gray-600">
+          <a href="#" class="flex items-center gap-2 hover:text-gray-800">
+            <svg class="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+            Gestão de projetos
+          </a>
+          <a href="#" class="flex items-center gap-2 hover:text-gray-800">
+            <svg class="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"/></svg>
+            Campanhas
+          </a>
+        </div>
+      </div>
+    </aside>
+
+    <main class="flex-1 p-6 md:p-8 bg-gray-50/50">
+      
+      <section id="tab-produtos" class="space-y-8">
+        <div class="relative rounded-2xl overflow-hidden shadow-lg max-w-5xl bg-neutral text-neutral-content h-60 flex items-center">
+          <div class="absolute inset-0 bg-cover bg-center opacity-40" style="background-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80');"></div>
+          <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent"></div>
+          
+          <div class="relative z-10 p-8 flex flex-col justify-center gap-2">
+            <span class="bg-black/60 border border-gray-600 text-white text-xs px-2.5 py-1 rounded-md w-max font-medium">Black Friday</span>
+            <h1 class="text-3xl font-extrabold text-white tracking-tight">A maior oferta de projetos<br>AWE do ano</h1>
+            <p class="text-sm text-gray-300 max-w-lg mt-1">AWE está oferecendo diversos serviços e produtos com descontos arrasadores.</p>
+          </div>
+        </div>
+
+        <div class="max-w-5xl">
+          <h2 class="text-lg font-bold text-gray-800 mb-5">Compre pontos e distribua como quiser</h2>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+            <div class="card bg-white border border-gray-200 shadow-sm rounded-xl overflow-hidden flex flex-col justify-between">
+              <div class="p-5 flex flex-col gap-4">
+                <div class="bg-black text-white p-5 rounded-lg flex flex-col justify-between h-36 relative overflow-hidden">
+                  <span class="bg-blue-600 text-[10px] font-bold text-white px-2 py-0.5 rounded w-max">CUPOM DISPONÍVEL</span>
+                  <div class="text-xl font-bold tracking-tight">Design de App _</div>
+                </div>
+                <p class="text-xs text-gray-500 leading-relaxed">Desenvolvimento, consultoria ou UX/UI para seus projetos decolarem.</p>
+              </div>
+              <div onclick="switchTab('creditos')" class="border-t border-gray-100 p-4 flex items-center justify-between text-sm cursor-pointer hover:bg-gray-50 transition-colors">
+                <div>
+                  <div class="font-bold text-gray-900">Comprar créditos</div>
+                  <div class="text-[11px] text-gray-400">5 créditos por R$10.000,00</div>
+                </div>
+                <span class="text-gray-400 font-bold">&gt;</span>
+              </div>
+            </div>
+
+            <div class="card bg-white border border-gray-200 shadow-sm rounded-xl overflow-hidden flex flex-col justify-between">
+              <div class="p-5 flex flex-col gap-4">
+                <div class="bg-black text-white p-5 rounded-lg flex flex-col justify-between h-36 relative overflow-hidden">
+                  <div></div>
+                  <div class="text-xl font-bold tracking-tight">Sistemas PDV _</div>
+                </div>
+                <p class="text-xs text-gray-500 leading-relaxed">Desenvolvimento de projeto de ponta a ponta, com nível de complexidade média com super desconto.</p>
+              </div>
+              <div onclick="switchTab('creditos')" class="border-t border-gray-100 p-4 flex items-center justify-between text-sm cursor-pointer hover:bg-gray-50 transition-colors">
+                <div>
+                  <div class="font-bold text-gray-900">Comprar créditos</div>
+                  <div class="text-[11px] text-gray-400">21 créditos por R$120.000,00</div>
+                </div>
+                <span class="text-gray-400 font-bold">&gt;</span>
+              </div>
+            </div>
+
+            <div class="card bg-white border border-gray-200 shadow-sm rounded-xl overflow-hidden flex flex-col justify-between">
+              <div class="p-5 flex flex-col gap-4">
+                <div class="bg-black text-white p-5 rounded-lg flex flex-col justify-between h-36 relative overflow-hidden">
+                  <div></div>
+                  <div class="text-xl font-bold tracking-tight">Sites Wordpress</div>
+                </div>
+                <p class="text-xs text-gray-500 leading-relaxed">Descontos cumulativos para projetos em Wordpress para 2025.</p>
+              </div>
+              <div onclick="switchTab('creditos')" class="border-t border-gray-100 p-4 flex items-center justify-between text-sm cursor-pointer hover:bg-gray-50 transition-colors">
+                <div>
+                  <div class="font-bold text-gray-900">Comprar créditos</div>
+                  <div class="text-[11px] text-gray-400">21 créditos por R$12.000,00</div>
+                </div>
+                <span class="text-gray-400 font-bold">&gt;</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section id="tab-creditos" class="hidden space-y-6">
+        <div class="mb-6">
+          <h1 class="text-2xl font-bold text-gray-800 mb-1">Comprar Créditos</h1>
+          <p class="text-sm text-gray-500">Escolha o pacote ideal para recarregar sua conta.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl">
+
+          <div class="card bg-white shadow-sm border border-gray-200 rounded-xl">
+            <div class="card-body p-6">
+              <h2 class="card-title text-xl text-gray-800">Pacote Start</h2>
+              <p class="text-xs text-gray-500 mb-2">Ideal para quem está começando.</p>
+              <div class="text-3xl font-extrabold text-gray-900 mb-4">100 <span class="text-sm font-normal text-gray-500">créditos</span></div>
+              <ul class="text-xs space-y-2 mb-6 text-gray-600">
+                <li>✓ Acesso a todos os recursos básicos</li>
+                <li>✓ Suporte via e-mail</li>
+                <li>✓ Validade de 30 dias</li>
+              </ul>
+              <div class="card-actions mt-auto">
+                <button class="btn btn-outline btn-primary w-full text-sm">R$ 29,90</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card bg-white shadow-md border-2 border-blue-600 rounded-xl relative">
+            <div class="badge badge-primary absolute -top-3 right-4 px-3 py-1 text-xs font-semibold">Mais Vendido</div>
+            <div class="card-body p-6">
+              <h2 class="card-title text-xl text-blue-600">Pacote Pro</h2>
+              <p class="text-xs text-gray-500 mb-2">O mais escolhido pelos usuários.</p>
+              <div class="text-3xl font-extrabold text-gray-900 mb-4">500 <span class="text-sm font-normal text-gray-500">créditos</span></div>
+              <ul class="text-xs space-y-2 mb-6 text-gray-600">
+                <li>✓ Todos os recursos do Start</li>
+                <li>✓ Suporte prioritário 24/7</li>
+                <li>✓ Validade de 90 dias</li>
+                <li>✓ Bônus de +50 créditos</li>
+              </ul>
+              <div class="card-actions mt-auto">
+                <button class="btn btn-primary w-full text-sm">R$ 99,90</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card bg-white shadow-sm border border-gray-200 rounded-xl">
+            <div class="card-body p-6">
+              <h2 class="card-title text-xl text-gray-800">Pacote Ultra</h2>
+              <p class="text-xs text-gray-500 mb-2">Para uso intensivo e equipes.</p>
+              <div class="text-3xl font-extrabold text-gray-900 mb-4">1500 <span class="text-sm font-normal text-gray-500">créditos</span></div>
+              <ul class="text-xs space-y-2 mb-6 text-gray-600">
+                <li>✓ Acesso ilimitado a todos os recursos</li>
+                <li>✓ Gerente de conta dedicado</li>
+                <li>✓ Sem data de expiração</li>
+              </ul>
+              <div class="card-actions mt-auto">
+                <button class="btn btn-outline btn-primary w-full text-sm">R$ 249,90</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <footer class="border-t border-gray-200 py-4 px-8 text-right bg-white">
+    <div class="flex justify-end items-center gap-1 text-xs text-gray-500 font-semibold">
+      <svg class="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+      AgênciaWeb
+    </div>
+  </footer>
+
+  <script>
+    function switchTab(tabName) {
+      const tabProdutos = document.getElementById('tab-produtos');
+      const tabCreditos = document.getElementById('tab-creditos');
+      const navProdutos = document.getElementById('nav-produtos');
+      const navCreditos = document.getElementById('nav-creditos');
+
+      if (tabName === 'produtos') {
+        tabProdutos.classList.remove('hidden');
+        tabCreditos.classList.add('hidden');
+        
+        navProdutos.className = "text-left text-blue-600 font-semibold transition-colors";
+        navCreditos.className = "text-left text-gray-500 hover:text-gray-800 transition-colors";
+      } else if (tabName === 'creditos') {
+        tabCreditos.classList.remove('hidden');
+        tabProdutos.classList.add('hidden');
+
+        navCreditos.className = "text-left text-blue-600 font-semibold transition-colors";
+        navProdutos.className = "text-left text-gray-500 hover:text-gray-800 transition-colors";
+      }
+    }
+  </script>
+</body>
+</html>
