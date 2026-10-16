@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Olimpíadas da Advocacia 2023</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        body{font-family:'Montserrat',sans-serif;background:#000;color:#333;margin:0}
+        .btn-grad{background:linear-gradient(90deg,#1d71b8,#90278e)}
+        .shape-grad{background:linear-gradient(135deg,#1d71b8,#90278e 50%,#e51a4b);border-radius:45% 55% 65% 35%/40% 50% 60% 50%}
+        .badge-cd{background:linear-gradient(135deg,#1d71b8,#004b87)}
+    </style>
+</head>
+<body class="bg-black text-gray-800 antialiased">
+    <!-- 1. HEADER -->
+    <header class="bg-white py-4 px-6 lg:px-16 flex justify-between items-center border-b sticky top-0 z-50">
+        <a href="index.html" class="flex items-center gap-2">
+            <svg class="w-8 h-8 text-red-600" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L1 21h22L12 2zm0 3.8L20 19H4l8-13.2z"/></svg>
+            <div class="flex flex-col leading-none">
+                <span class="text-xs font-black tracking-widest text-red-600 uppercase">Olimpíadas</span>
+                <span class="text-[10px] font-bold text-blue-900 tracking-wider">DA ADVOCACIA</span>
+                <span class="text-[8px] text-gray-500 font-semibold">CONCAD 2023</span>
+            </div>
+        </a>
+        <nav class="hidden md:flex gap-8 text-xs font-bold text-gray-600">
+            <a href="index.html" class="text-[#0088cc] font-extrabold">Home</a>
+            <a href="modalidades.html" class="hover:text-black">Modalidades</a>
+            <a href="noticias.html" class="hover:text-black">Notícias</a>
+            <a href="agenda.html" class="hover:text-black">Cronograma</a>
+            <a href="administracao.html" class="hover:text-black">Administradores</a>
+            <a href="regulamento.html" class="hover:text-black">Regulamento</a>
+        </nav>
+    </header>
+
+    <!-- 2. HERO + 4 CARDS -->
+    <section class="bg-black text-white py-12 px-6 lg:px-16 max-w-[1300px] mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center mb-16">
+            <div class="lg:col-span-7 space-y-6">
+                <h1 class="text-4xl md:text-6xl font-black text-white leading-tight">I Olimpíadas da<br/>Advocacia 2023</h1>
+                <p class="text-gray-300 text-sm md:text-base leading-relaxed max-w-xl">No dia a dia você corre, você luta, você se desdobra! E agora você pode fazer tudo isso por esporte! De 03 a 08 de julho de 2023, Goiânia será a capital nacional da advocacia. Temos um encontro marcado. Inscrições a partir do dia 10 de abril!</p>
+                <div><a href="#fale-conosco" class="btn-grad text-white font-bold text-xs px-8 py-3 rounded hover:opacity-90 inline-block">Inscreva-se</a></div>
+            </div>
+            <div class="lg:col-span-5 flex justify-center relative">
+                <div class="relative w-[300px] h-[360px] md:w-[360px] md:h-[400px]">
+                    <div class="shape-grad absolute inset-0 opacity-90"></div>
+                    <img src="https://images.unsplash.com/photo-1517466787929-bc90951d0974?q=80&w=800&auto=format&fit=crop" alt="Atleta" class="absolute inset-0 w-full h-full object-cover rounded-full z-10" />
+                    <div class="badge-cd absolute -bottom-6 right-0 z-20 text-white rounded-3xl p-4 shadow-2xl border border-white/20 text-center w-[270px]">
+                        <span class="text-xs font-black tracking-wider uppercase block mb-2">FALTAM</span>
+                        <div class="flex justify-between items-center bg-white text-gray-900 rounded-xl p-2 font-mono font-bold text-lg mb-2">
+                            <div class="text-center flex-1"><span class="block text-base font-black">13</span><span class="text-[7px] text-gray-500 uppercase block -mt-1">DIAS</span></div>-
+                            <div class="text-center flex-1"><span class="block text-base font-black">13</span><span class="text-[7px] text-gray-500 uppercase block -mt-1">HORAS</span></div>-
+                            <div class="text-center flex-1"><span class="block text-base font-black">13</span><span class="text-[7px] text-gray-500 uppercase block -mt-1">MINUTOS</span></div>-
+                            <div class="text-center flex-1"><span class="block text-base font-black">13</span><span class="text-[7px] text-gray-500 uppercase block -mt-1">SEGUNDOS</span></div>
+                        </div>
+                        <span class="text-[8px] font-bold tracking-widest text-red-200 uppercase block">PARA O INÍCIO DAS INSCRIÇÕES</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 pt-6">
+            <div class="bg-white text-gray-800 rounded-2xl p-6 text-center shadow-xl relative pt-10 flex flex-col items-center">
+                <div class="w-12 h-12 rounded-full bg-[#0099ff] text-white flex items-center justify-center absolute -top-6 border-4 border-black"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg></div>
+                <h3 class="font-bold text-sm mb-2">Participe</h3>
+                <p class="text-[11px] text-gray-600 leading-relaxed">A I Olimpíadas da Advocacia é a maior competição esportiva para Advogados no Brasil. A expectativa é reunir 4.000 atletas em 06 dias de disputas. Fique atento às informações aqui no portal. Prepare-se!</p>
+            </div>
+            <div class="bg-white text-gray-800 rounded-2xl p-6 text-center shadow-xl relative pt-10 flex flex-col items-center">
+                <div class="w-12 h-12 rounded-full bg-[#0099ff] text-white flex items-center justify-center absolute -top-6 border-4 border-black"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg></div>
+                <h3 class="font-bold text-sm mb-2">Locais</h3>
+                <p class="text-[11px] text-gray-600 leading-relaxed">A competição será realizada em Goiás, nas cidades de Goiânia e Aparecida de Goiânia, em 10 centros esportivos, tendo o Clube CEL/OAB, como o principal local de competição.</p>
+            </div>
+            <div class="bg-white text-gray-800 rounded-2xl p-6 text-center shadow-xl relative pt-10 flex flex-col items-center">
+                <div class="w-12 h-12 rounded-full bg-[#0099ff] text-white flex items-center justify-center absolute -top-6 border-4 border-black"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg></div>
+                <h3 class="font-bold text-sm mb-2">Inscrições</h3>
+                <p class="text-[11px] text-gray-600 leading-relaxed">A partir de 10 de abril, totalmente on-line, aqui mesmo no portal do evento. Acompanhe as nossas atualizações aqui no portal. Leia atentamente o Regulamento Geral dos jogos.</p>
+            </div>
+            <div class="bg-white text-gray-800 rounded-2xl p-6 text-center shadow-xl relative pt-10 flex flex-col items-center">
+                <div class="w-12 h-12 rounded-full bg-[#0099ff] text-white flex items-center justify-center absolute -top-6 border-4 border-black"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
+                <h3 class="font-bold text-sm mb-2">Disputas</h3>
+                <p class="text-[11px] text-gray-600 leading-relaxed">São 19 modalidades disponíveis na competição, individuais e coletivas. Os jogos serão realizados em categorias no masculino e feminino, com disputas também em categorias para PCDs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. SOBRE A EDIÇÃO 2023 -->
+    <section class="py-16 px-6 lg:px-16 bg-white text-gray-800">
+        <div class="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+            <div class="lg:col-span-6"><div class="rounded-2xl overflow-hidden shadow-lg h-64 md:h-80 w-full border"><img src="https://images.unsplash.com/photo-1530549387789-4c1017266635?q=80&w=800&auto=format&fit=crop" alt="Natação" class="w-full h-full object-cover" /></div></div>
+            <div class="lg:col-span-6 space-y-4">
+                <h2 class="text-3xl font-black text-red-600">Sobre a edição 2023</h2>
+                <p class="text-xs md:text-sm leading-relaxed">A edição 2023 da <strong>I Olimpíadas da Advocacia</strong> vem recheada de grandes atrações e competições de alto nível. São <strong>19 modalidades disponíveis</strong> que devem receber cerca de <strong>4.000 atletas advogados e advogadas</strong> de todo o Brasil.</p>
+                <p class="text-xs md:text-sm leading-relaxed">O Centro Esportivo e de Lazer – CEL da OAB/CASAG, em Aparecida de Goiânia-GO, será o principal polo de competições do evento. Além do CEL, outros centros esportivos com estruturas de alto padrão receberão disputas em várias modalidades. <strong>Uma competição de alto nível</strong>, a melhor infraestrutura, eventos e festividades. Venha aproveitar Goiânia e se divertir com a gente!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. NOTÍCIAS -->
+    <section class="bg-black text-white py-16 px-6 lg:px-16 border-t border-gray-900">
+        <div class="max-w-[1200px] mx-auto">
+            <h2 class="text-3xl font-black mb-8">Notícias</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                <div class="lg:col-span-6 bg-gray-950 rounded-xl overflow-hidden border border-gray-800 flex flex-col justify-between">
+                    <div>
+                        <div class="h-64 overflow-hidden"><img src="https://imgs.search.brave.com/Y9JE4gY0nOG9RkTvh9Cixcv6SBB3Dt_qZc2yvj_9MoU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zYXZh/bmNpbmkuY2RuLm1h/Z2F6b3JkLmNvbS5i/ci9pbWcvMjAyNC8x/MS9ibG9nLzEzMDI3/L2NpY2xpc21vLmpw/Zw" alt="Ciclismo" class="w-full h-full object-cover" /></div>
+                        <div class="p-6">
+                            <div class="text-[11px] text-gray-400 mb-2">17/03/2023 • <span class="text-[#0088cc] font-semibold">Organização</span></div>
+                            <h3 class="text-lg font-bold text-[#0088cc] hover:underline cursor-pointer mb-3">Colégio de presidentes das CAA/Concad anuncia inscrições para Olimpíadas da Advocacia</h3>
+                            <p class="text-xs text-gray-300 leading-relaxed font-light">As datas de inscrições para a primeira edição das Olimpíadas da Advocacia foram anunciadas nesta terça-feira (14/3) durante o 5º Colégio de presidentes das Caixas de Assistência dos Advogados (CAA) e da Coordenação Nacional das Caixas de Assistência dos Advogados (Concad) [...]</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-6 flex flex-col justify-between gap-4">
+                    <div class="bg-gray-950 p-3 rounded-xl border border-gray-800 flex gap-4 items-center">
+                        <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?q=80&w=300&auto=format&fit=crop" alt="Basquete" class="w-28 h-20 rounded-lg object-cover flex-shrink-0" />
+                        <div><div class="text-[10px] text-gray-400">17/03/2023 • <span class="text-[#0088cc]">Organização</span></div><h4 class="text-xs font-bold text-white hover:text-[#0088cc] cursor-pointer mt-1">Fique por dentro das modalidades que estarão em disputa, categorias e limites de atletas por seccional</h4></div>
+                    </div>
+                    <div class="bg-gray-950 p-3 rounded-xl border border-gray-800 flex gap-4 items-center">
+                        <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?q=80&w=300&auto=format&fit=crop" alt="Corrida" class="w-28 h-20 rounded-lg object-cover flex-shrink-0" />
+                        <div><div class="text-[10px] text-gray-400">17/03/2023 • <span class="text-purple-400">Inscrições</span></div><h4 class="text-xs font-bold text-white hover:text-[#0088cc] cursor-pointer mt-1">Olimpíada da Advocacia terá inscrições 100% digitais</h4></div>
+                    </div>
+                    <div class="bg-gray-950 p-3 rounded-xl border border-gray-800 flex gap-4 items-center">
+                        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=300&auto=format&fit=crop" alt="Goiânia" class="w-28 h-20 rounded-lg object-cover flex-shrink-0" />
+                        <div><div class="text-[10px] text-gray-400">07/03/2023 • <span class="text-[#0088cc]">Organização</span></div><h4 class="text-xs font-bold text-white hover:text-[#0088cc] cursor-pointer mt-1">Goiânia sediará em 2023 a primeira edição das Olimpíadas da Advocacia</h4></div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8"><a href="noticias.html" class="text-[#0088cc] text-xs font-bold hover:underline flex items-center gap-2">Clique na seta e acesse todas as notícias →</a></div>
+        </div>
+    </section>
+
+    <!-- 5. DEPOIMENTOS -->
+    <section class="py-16 px-6 lg:px-16 bg-[#f4f4f5] text-gray-800">
+        <div class="max-w-[1200px] mx-auto text-center">
+            <h2 class="text-3xl font-black mb-12">Depoimentos</h2>
+            <div class="flex items-center justify-center gap-6">
+                <button class="hidden md:flex w-10 h-10 rounded-full bg-[#0099ff] text-white items-center justify-center shadow hover:bg-blue-600 transition flex-shrink-0"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M15 19l-7-7 7-7"/></svg></button>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left w-full">
+                    <div class="bg-gradient-to-br from-red-600 via-pink-600 to-purple-800 text-white rounded-2xl p-6 shadow-xl flex flex-col justify-between">
+                        <p class="text-xs leading-relaxed mb-6">Lorem Ipsum Has Been The Industry's Standard Dummy Text Ever Since The 1500s, When An Unknown Printer Took A Galley Of Type And Scrambled It To Make A Type Specimen Book.</p>
+                        <div class="flex items-center gap-3"><div class="w-10 h-10 rounded-full bg-yellow-400 text-gray-900 font-bold flex items-center justify-center border-2 border-white">JT</div><div><h4 class="text-sm font-bold">Jefferson Thawan</h4><span class="text-[10px] opacity-80 block">Função/Cargo</span></div></div>
+                    </div>
+                    <div class="bg-gradient-to-br from-blue-600 via-indigo-600 to-purple-800 text-white rounded-2xl p-6 shadow-xl flex flex-col justify-between">
+                        <p class="text-xs leading-relaxed mb-6">Lorem Ipsum Has Been The Industry's Standard Dummy Text Ever Since The 1500s, When An Unknown Printer Took A Galley Of Type And Scrambled It To Make A Type Specimen Book.</p>
+                        <div class="flex items-center gap-3"><div class="w-10 h-10 rounded-full bg-green-400 text-gray-900 font-bold flex items-center justify-center border-2 border-white">CX</div><div><h4 class="text-sm font-bold">Cesimar Xavier</h4><span class="text-[10px] opacity-80 block">Função/Cargo</span></div></div>
+                    </div>
+                    <div class="bg-gradient-to-br from-red-600 via-pink-600 to-purple-800 text-white rounded-2xl p-6 shadow-xl flex flex-col justify-between">
+                        <p class="text-xs leading-relaxed mb-6">Lorem Ipsum Has Been The Industry's Standard Dummy Text Ever Since The 1500s, When An Unknown Printer Took A Galley Of Type And Scrambled It To Make A Type Specimen Book.</p>
+                        <div class="flex items-center gap-3"><div class="w-10 h-10 rounded-full bg-blue-400 text-gray-900 font-bold flex items-center justify-center border-2 border-white">ZD</div><div><h4 class="text-sm font-bold">Zadoque</h4><span class="text-[10px] opacity-80 block">Função/Cargo</span></div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center items-center gap-2 mt-8"><span class="w-2 h-2 rounded-full bg-gray-400"></span><span class="w-2.5 h-2.5 rounded-full bg-[#0099ff]"></span><span class="w-2 h-2 rounded-full bg-gray-400"></span><span class="w-2 h-2 rounded-full bg-gray-400"></span></div>
+        </div>
+    </section>
+
+    <!-- 6. DÚVIDAS FREQUENTES -->
+    <section class="py-16 px-6 lg:px-16 bg-white text-gray-800">
+        <div class="max-w-3xl mx-auto">
+            <div class="text-center mb-10"><h2 class="text-3xl font-black text-red-600 mb-2">Dúvidas Frequentes</h2><p class="text-xs text-gray-500 font-medium">Dúvidas frequentemente questionadas por usuários que cessam a página</p></div>
+            <div class="border border-gray-200 rounded-xl overflow-hidden shadow-sm space-y-0">
+                <div class="bg-gray-800 text-white p-4">
+                    <div class="flex justify-between items-center cursor-pointer font-bold text-xs md:text-sm"><span>O evento dá algum tipo de premiação para os vencedores?</span><svg class="w-4 h-4 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 15l7-7 7 7"/></svg></div>
+                    <div class="mt-3 text-xs text-gray-300 font-light border-t border-gray-700 pt-3">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+                </div>
+                <div class="bg-white text-gray-700 p-4 border-t border-gray-200 flex justify-between items-center font-semibold text-xs md:text-sm"><span>Where does it come from?</span><svg class="w-4 h-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"/></svg></div>
+                <div class="bg-white text-gray-700 p-4 border-t border-gray-200 flex justify-between items-center font-semibold text-xs md:text-sm"><span>Where can I get some?</span><svg class="w-4 h-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"/></svg></div>
+                <div class="bg-white text-gray-700 p-4 border-t border-gray-200 flex justify-between items-center font-semibold text-xs md:text-sm"><span>What is Lorem Ipsum?</span><svg class="w-4 h-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"/></svg></div>
+                <div class="bg-white text-gray-700 p-4 border-t border-gray-200 flex justify-between items-center font-semibold text-xs md:text-sm"><span>Why do we use it?</span><svg class="w-4 h-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"/></svg></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. REALIZAÇÃO E ORGANIZAÇÃO -->
+    <section class="bg-black text-white py-14 px-6 text-center border-t border-gray-900">
+        <div class="max-w-4xl mx-auto space-y-10">
+            <div>
+                <h3 class="text-xl font-bold mb-6">Realização</h3>
+                <div class="flex justify-center gap-4 flex-wrap">
+                    <div class="bg-white text-blue-900 text-[10px] font-black px-4 py-2 rounded shadow flex border"><span>OAB</span>|<span>CONCAD</span>|<span>CASAG</span></div>
+                    <div class="bg-white text-blue-900 text-[10px] font-black px-4 py-2 rounded shadow flex border"><span>OAB</span>|<span>CONCAD</span>|<span>CASAG</span></div>
+                    <div class="bg-white text-blue-900 text-[10px] font-black px-4 py-2 rounded shadow flex border"><span>OAB</span>|<span>CONCAD</span>|<span>CASAG</span></div>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-6">Organização</h3>
+                <div class="flex justify-center gap-4 flex-wrap">
+                    <div class="bg-gradient-to-r from-orange-500 to-red-600 text-white text-[11px] font-black px-5 py-2 rounded shadow italic">HC SPORTS</div>
+                    <div class="bg-gradient-to-r from-orange-500 to-red-600 text-white text-[11px] font-black px-5 py-2 rounded shadow italic">HC SPORTS</div>
+                    <div class="bg-gradient-to-r from-orange-500 to-red-600 text-white text-[11px] font-black px-5 py-2 rounded shadow italic">HC SPORTS</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. FALE CONOSCO -->
+    <section id="fale-conosco" class="py-16 px-6 lg:px-16 bg-white text-gray-800 border-t">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-black text-red-600 mb-8">Fale conosco</h2>
+            <form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="space-y-4">
+                    <div><label class="block text-xs font-bold mb-1">Nome</label><input type="text" placeholder="Digite o seu nome" class="w-full px-3 py-2 text-xs border rounded bg-gray-50/50" /></div>
+                    <div><label class="block text-xs font-bold mb-1">E-mail</label><input type="email" placeholder="Digite o seu e-mail" class="w-full px-3 py-2 text-xs border rounded bg-gray-50/50" /></div>
+                    <div><label class="block text-xs font-bold mb-1">Ocupação</label><input type="text" placeholder="Digite a sua ocupação" class="w-full px-3 py-2 text-xs border rounded bg-gray-50/50" /></div>
+                </div>
+                <div class="flex flex-col justify-between space-y-4">
+                    <div><label class="block text-xs font-bold mb-1">Mensagem</label><textarea placeholder="Digite a mensagem" rows="5" class="w-full px-3 py-2 text-xs border rounded bg-gray-50/50 resize-none"></textarea></div>
+                    <div class="text-right"><button type="submit" class="bg-[#0099ff] text-white text-xs font-bold px-6 py-2.5 rounded shadow">Enviar e-mail</button></div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- 9. FOOTER -->
+    <footer class="bg-[#f4f4f5] border-t py-8 px-6 text-xs text-gray-600">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="flex items-center gap-2"><svg class="w-6 h-6 text-red-600" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L1 21h22L12 2zm0 3.8L20 19H4l8-13.2z"/></svg><div class="flex flex-col leading-none"><span class="text-[10px] font-black text-red-600 uppercase">Olimpíadas</span><span class="text-[8px] font-bold text-blue-900">DA ADVOCACIA</span></div></div>
+            <div class="flex gap-6 flex-wrap justify-center font-bold text-[11px]"><a href="index.html" class="text-[#0088cc]">Home</a><a href="modalidades.html" class="hover:underline">Modalidades</a><a href="agenda.html" class="hover:underline">Agenda</a><a href="resultados.html" class="hover:underline">Resultados</a><a href="canais.html" class="hover:underline">Canais</a><a href="regulamento.html" class="hover:underline">Regulamento</a></div>
+            <div><a href="#" class="text-[#0088cc]"><svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a></div>
+        </div>
+        <div class="text-center text-[10px] text-gray-400 mt-6">2023 HC Sports. Todos os direitos reservados.</div>
+    </footer>
+</body>
+</html>
