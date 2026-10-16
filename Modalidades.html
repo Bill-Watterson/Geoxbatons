@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modalidades - I Olimpíadas da Advocacia 2023</title>
+  
+  <!-- Tailwind CSS & DaisyUI -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-200 min-h-screen py-0 lg:py-8 flex justify-center items-start text-gray-800">
+
+  <!-- CONTAINER CENTRALIZADO DO FIGMA -->
+  <div class="max-w-[1180px] w-full bg-white shadow-md flex flex-col justify-between min-h-[750px]">
+    
+    <div>
+      <!-- ==================== HEADER ==================== -->
+      <header class="border-b border-gray-100 px-10 py-5">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+          
+          <!-- Logo -->
+          <a href="index.html" class="flex items-center gap-2">
+            <div class="flex items-center gap-2">
+              <svg class="w-7 h-7 text-red-500" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+              </svg>
+              <div class="flex flex-col leading-tight">
+                <span class="text-[13px] font-black uppercase text-gray-800 tracking-tight">Olimpíadas</span>
+                <span class="text-[10px] uppercase font-bold text-gray-500 -mt-1">da Advocacia</span>
+                <span class="text-[8px] text-gray-400 font-normal">CAXIAS 2023</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Menu Superior -->
+          <nav>
+            <ul class="flex flex-wrap items-center gap-7 text-[12px] font-medium text-gray-600">
+              <li><a href="index.html" class="hover:text-sky-500 transition-colors">Home</a></li>
+              <li><a href="modalidades.html" class="text-sky-500 font-bold">Modalidades</a></li>
+              <li><a href="noticias.html" class="hover:text-sky-500 transition-colors">Notícias</a></li>
+              <li><a href="cronograma.html" class="hover:text-sky-500 transition-colors">Cronograma</a></li>
+              <li><a href="#" class="hover:text-sky-500 transition-colors">Administradores</a></li>
+              <li><a href="#" class="hover:text-sky-500 transition-colors">Regulamento</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <!-- ==================== CONTEÚDO PRINCIPAL ==================== -->
+      <main class="px-12 py-8">
+        
+        <!-- Título -->
+        <h1 class="text-lg font-black uppercase tracking-wider text-gray-900 mb-6">
+          MODALIDADES
+        </h1>
+
+        <!-- Busca e Filtro -->
+        <div class="flex flex-wrap items-center gap-3 mb-10">
+          <div class="relative w-72">
+            <svg class="w-3.5 h-3.5 absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+            </svg>
+            <input 
+              type="text" 
+              placeholder="Pesquise aqui por uma modalidade" 
+              class="w-full pl-9 pr-4 py-1.5 text-[11px] border border-gray-200 rounded-md focus:outline-none focus:border-sky-500 bg-white placeholder-gray-400"
+            />
+          </div>
+
+          <div class="relative">
+            <select class="pl-3 pr-8 py-1.5 text-[11px] text-gray-600 font-normal rounded-md border border-gray-200 focus:outline-none focus:border-sky-500 bg-white appearance-none cursor-pointer">
+              <option value="">Filtrar por</option>
+              <option value="coletivo">Esportes Coletivos</option>
+              <option value="individual">Esportes Individuais</option>
+            </select>
+            <svg class="w-3 h-3 absolute right-2.5 top-1/2 -translate-y-1/2 text-sky-500 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-8 gap-y-10">
+          
+
+          <div>
+            <h2 class="text-4xl font-light text-gray-700 mb-4">B</h2>
+            <ul class="space-y-2 text-[12px] font-medium text-gray-700">
+              <li>
+                <a href="basquete-3x3.html" class="group flex items-center gap-2 hover:bg-sky-100 hover:text-sky-600 font-semibold px-2.5 py-1 rounded-full -ml-2.5 w-fit transition-all">
+                  <span class="w-5 h-5 rounded-full bg-gray-800 group-hover:bg-sky-500 text-white flex items-center justify-center text-[8px] transition-colors">●</span>
+                  <span>Basquete 3x3</span>
+                </a>
+              </li>
+              <li>
+                <a href="beach-tennis.html" class="group flex items-center gap-2 hover:bg-sky-100 hover:text-sky-600 font-semibold px-2.5 py-1 rounded-full -ml-2.5 w-fit transition-all">
+                  <span class="w-5 h-5 rounded-full bg-gray-800 group-hover:bg-sky-500 text-white flex items-center justify-center text-[8px] transition-colors">●</span>
+                  <span>Beach Tennis</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h2 class="text-4xl font-light text-gray-700 mb-4">C</h2>
+            <ul class="space-y-2 text-[12px] font-medium text-gray-700">
+              <li>
+                <a href="corrida-de-rua.html" class="group flex items-center gap-2 hover:bg-sky-100 hover:text-sky-600 font-semibold px-2.5 py-1 rounded-full -ml-2.5 w-fit transition-all">
+                  <span class="w-5 h-5 rounded-full bg-gray-800 group-hover:bg-sky-500 text-white flex items-center justify-center text-[8px] transition-colors">●</span>
+                  <span>Corrida de Rua</span>
+                </a>
+              </li>
+              <li>
+                <a href="crossfit.html" class="group flex items-center gap-2 hover:bg-sky-100 hover:text-sky-600 font-semibold px-2.5 py-1 rounded-full -ml-2.5 w-fit transition-all">
+                  <span class="w-5 h-5 rounded-full bg-gray-800 group-hover:bg-sky-500 text-white flex items-center justify-center text-[8px] transition-colors">●</span>
+                  <span>Crossfit</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h2 class="text-4xl font-light text-gray-700 mb-4">F</h2>
+            <ul class="space-y-2 text-[12px] font-medium text-gray-700">
+              <li>
+                <a href="futebol-society.html" class="group flex items-center gap-2 hover:bg-sky-100 hover:text-sky-600 font-semibold px-2.5 py-1 rounded-full -ml-2.5 w-fit transition-all">
+                  <span class="w-5 h-5 rounded-full bg-gray-800 group-hover:bg-sky-500 text-white flex items-center justify-center text-[8px] transition-colors">●</span>
+                  <span>Futebol Society</span>
+                </a>
+              </li>
+              <li>
+                <a href="futebol-de-mesa.html" class="group flex items-center gap-2 hover:bg-sky-100 hover:text-sky-600 font-semibold px-2.5 py-1 rounded-full -ml-2.5 w-fit transition-all">
+                  <span class="w-5 h-5 rounded-full bg-gray-800 group-hover:bg-sky-500 text-white flex items-center justify-center text-[8px] transition-colors">●</span>
+                  <span>Futebol de Mesa</span>
+                </a>
+              </li>
+              <li>
+                <a href="futebol-11.html" class="flex items-center gap-2  text-gray-600 font-semibold px-2.5 py-1 rounded-full -ml-2.5 w-fit transition-all">
+                  <span class="w-5 h-5 rounded-full bg-gray-800 text-white flex items-center justify-center text-[8px]">●</span>
+                  <span>Futebol 11</span>
+                </a>
+              </li>
+              <li>
+                <a href="futebol-7.html" class="group flex items-center gap-2 hover:bg-sky-100 hover:text-sky-600 font-semibold px-2.5 py-1 rounded-full -ml-2.5 w-fit transition-all">
+                  <span class="w-5 h-5 rounded-full bg-gray-800 group-hover:bg-sky-500 text-white flex items-center justify-center text-[8px] transition-colors">●</span>
+                  <span>Futebol 7</span>
+                </a>
+              </li>
+              <li>
+                <a href="futevolei.html" class="group flex items-center gap-2 hover:bg-sky-100 hover:text-sky-600 font-semibold px-2.5 py-1 rounded-full -ml-2.5 w-fit transition-all">
+                  <span class="w-5 h-5 rounded-full bg-gray-800 group-hover:bg-sky-500 text-white flex items-center justify-center text-[8px] transition-colors">●</span>
+                  <span>Futevôlei</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h2 class="text-4xl font-light text-gray-700 mb-4">J</h2>
+            <ul class="space-y-2 text-[12px] font-medium text-gray-700">
+              <li>
+                <a href="jiu-jitsu.html" class="group flex items-center gap-2 hover:bg-sky-100 hover:text-sky-600 font-semibold px-2.5 py-1 rounded-full -ml-2.5 w-fit transition-all">
+                  <span class="w-5 h-5 rounded-full bg-gray-800 group-hover:bg-sky-500 text-white flex items-center justify-center text-[8px] transition-colors">●</span>
+                  <span>Jiu-jitsu</span>
+                </a>
+              </li>
+              <li>
+                <a href="judo.html" class="group flex items-center gap-2 hover:bg-sky-100 hover:text-sky-600 font-semibold px-2.5 py-1 rounded-full -ml-2.5 w-fit transition-all">
+                  <span class="w-5 h-5 rounded-full bg-gray-800 group-hover:bg-sky-500 text-white flex items-center justify-center text-[8px] transition-colors">●</span>
+                  <span>Judô</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h2 class="text-4xl font-light text-gray-700 mb-4">N</h2>
+            <ul class="space-y-2 text-[12px] font-medium text-gray-700">
+              <li>
+                <a href="Natacao.html" class="group flex items-center gap-2 hover:bg-sky-100 hover:text-sky-600 font-semibold px-2.5 py-1 rounded-full -ml-2.5 w-fit transition-all">
+                  <span class="w-5 h-5 rounded-full bg-gray-800 group-hover:bg-sky-500 text-white flex items-center justify-center text-[8px] transition-colors">●</span>
+                  <span>Natação</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h2 class="text-4xl font-light text-gray-700 mb-4">S</h2>
+            <ul class="space-y-2 text-[12px] font-medium text-gray-700">
+              <li>
+                <a href="sinuca.html" class="group flex items-center gap-2 hover:bg-sky-100 hover:text-sky-600 font-semibold px-2.5 py-1 rounded-full -ml-2.5 w-fit transition-all">
+                  <span class="w-5 h-5 rounded-full bg-gray-800 group-hover:bg-sky-500 text-white flex items-center justify-center text-[8px] transition-colors">●</span>
+                  <span>Sinuca</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h2 class="text-4xl font-light text-gray-700 mb-4">T</h2>
+            <ul class="space-y-2 text-[12px] font-medium text-gray-700">
+              <li>
+                <a href="tenis.html" class="group flex items-center gap-2 hover:bg-sky-100 hover:text-sky-600 font-semibold px-2.5 py-1 rounded-full -ml-2.5 w-fit transition-all">
+                  <span class="w-5 h-5 rounded-full bg-gray-800 group-hover:bg-sky-500 text-white flex items-center justify-center text-[8px] transition-colors">●</span>
+                  <span>Tênis</span>
+                </a>
+              </li>
+              <li>
+                <a href="tenis-de-mesa.html" class="group flex items-center gap-2 hover:bg-sky-100 hover:text-sky-600 font-semibold px-2.5 py-1 rounded-full -ml-2.5 w-fit transition-all">
+                  <span class="w-5 h-5 rounded-full bg-gray-800 group-hover:bg-sky-500 text-white flex items-center justify-center text-[8px] transition-colors">●</span>
+                  <span>Tênis de Mesa</span>
+                </a>
+              </li>
+              <li>
+                <a href="tiro-esportivo.html" class="group flex items-center gap-2 hover:bg-sky-100 hover:text-sky-600 font-semibold px-2.5 py-1 rounded-full -ml-2.5 w-fit transition-all">
+                  <span class="w-5 h-5 rounded-full bg-gray-800 group-hover:bg-sky-500 text-white flex items-center justify-center text-[8px] transition-colors">●</span>
+                  <span>Tiro Esportivo</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h2 class="text-4xl font-light text-gray-700 mb-4">V</h2>
+            <ul class="space-y-2 text-[12px] font-medium text-gray-700">
+              <li>
+                <a href="volei-de-praia.html" class="group flex items-center gap-2 hover:bg-sky-100 hover:text-sky-600 font-semibold px-2.5 py-1 rounded-full -ml-2.5 w-fit transition-all">
+                  <span class="w-5 h-5 rounded-full bg-gray-800 group-hover:bg-sky-500 text-white flex items-center justify-center text-[8px] transition-colors">●</span>
+                  <span>Vôlei de Praia</span>
+                </a>
+              </li>
+              <li>
+                <a href="volei-de-quadra.html" class="group flex items-center gap-2 hover:bg-sky-100 hover:text-sky-600 font-semibold px-2.5 py-1 rounded-full -ml-2.5 w-fit transition-all">
+                  <span class="w-5 h-5 rounded-full bg-gray-800 group-hover:bg-sky-500 text-white flex items-center justify-center text-[8px] transition-colors">●</span>
+                  <span>Vôlei de Quadra</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h2 class="text-4xl font-light text-gray-700 mb-4">X</h2>
+            <ul class="space-y-2 text-[12px] font-medium text-gray-700">
+              <li>
+                <a href="xadrez.html" class="group flex items-center gap-2 hover:bg-sky-100 hover:text-sky-600 font-semibold px-2.5 py-1 rounded-full -ml-2.5 w-fit transition-all">
+                  <span class="w-5 h-5 rounded-full bg-gray-800 group-hover:bg-sky-500 text-white flex items-center justify-center text-[8px] transition-colors">●</span>
+                  <span>Xadrez</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </main>
+    </div>
+
+    <footer class="bg-gray-100 px-12 py-5 border-t border-gray-200 mt-12">
+      <div class="flex flex-col sm:flex-row items-center justify-between text-[10px] text-gray-400 gap-2">
+        <span>I Olimpíadas da Advocacia 2023</span>
+        <span>2023 HC Sports. Todos os direitos reservados.</span>
+      </div>
+    </footer>
+
+  </div>
+
+</body>
+</html>
